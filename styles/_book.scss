@@ -2,10 +2,6 @@
 
 .container-book1 {
     background-image: url(../images/pool.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 700px;
 
     &__card {
         top: 35%;
@@ -16,10 +12,6 @@
 
 .container-book2 {
     background-image: url(../images/ocean.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 700px;
 
     &__card {
         top: 35%;
@@ -27,11 +19,28 @@
     }
 }
 
+.container-book {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+
+    &__country {
+        font-family: fonts.$primary-font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 1.5px;
+        color: fonts.$text-color-first;
+    }
+}
+
 .card--book {
     background-color: fonts.$background-color-card;
     opacity: 0.9;
-    width: 450px;
-    height: 250px;
+    width: 500px;
+    height: 300px;
     padding: 50px 30px;
     position: relative;
 }

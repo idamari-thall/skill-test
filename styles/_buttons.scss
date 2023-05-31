@@ -5,6 +5,14 @@
     width: 228px;
     height: 63px;
     border: none;
+    font-family: fonts.$secondary-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-top: 30px;
 }
 
 .link--btn {
@@ -15,4 +23,5 @@
 
 .btn--search {
     border: 2px solid #fff;
+    margin: 0px;
 }

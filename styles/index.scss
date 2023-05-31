@@ -12,7 +12,37 @@
 body {
     display: flex;
     flex-flow: column wrap;
-    //align-content: center;
     background-color: fonts.$background-color;
     color: fonts.$primary-color;
+}
+
+a {
+    color: fonts.$primary-color;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: fonts.$secondary-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 26px;
+}
+
+h3 {
+    font-family: fonts.$primary-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: fonts.$primary-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: fonts.$text-color-first;
 }
