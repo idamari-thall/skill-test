@@ -6,7 +6,34 @@
     background-position: center;
     background-size: cover;
     height: 731px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__card {
+        background-color: fonts.$background-color;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        width: 950px;
+        height: 287px;
+    }
+
+    &__text {
+        width: 550px;
+        height: 250px;
+        padding: 50px 0 0 50px;
+    }
 }
+
+.fa-quote-left {
+    color: fonts.$decoration-color;
+    font-size: 36px;
+}
+
 
 .review__img {
     width: 445px;

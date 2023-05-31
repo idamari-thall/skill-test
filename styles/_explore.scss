@@ -1,15 +1,48 @@
 @use 'fonts';
 
-.container-explore {
+.explore {
     background-image: url(../images/castle.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 685px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.container-explore__img {
-    //position: absolute;
-    width: 350px;
-    height: 220px;
+.container-explore {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+
+
+    &__card1 {
+        display: flex;
+        flex-direction: column;
+        width: 560px;
+    }
+
+    &__card2 {
+        display: flex;
+        flex-direction: column;
+        width: 560px;
+    }
+
+
+    &__img {
+        //position: absolute;
+        width: 350px;
+        height: 220px;
+        margin: 5px;
+    }
+
+}
+
+.img-cliff {
+    position: relative;
+    left: 80px;
 }

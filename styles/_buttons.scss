@@ -1,7 +1,7 @@
 @use 'fonts';
 
 .btn {
-    background-color: fonts.$btn-color;
+    background-color: fonts.$decoration-color;
     width: 228px;
     height: 63px;
     border: none;
@@ -11,4 +11,8 @@
     color: fonts.$primary-color;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.btn--search {
+    border: 2px solid #fff;
 }

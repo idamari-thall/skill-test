@@ -6,6 +6,12 @@
     background-position: center;
     background-size: cover;
     height: 700px;
+
+    &__card {
+        top: 35%;
+        left: 15%;
+    }
+
 }
 
 .container-book2 {
@@ -14,4 +20,18 @@
     background-position: center;
     background-size: cover;
     height: 700px;
+
+    &__card {
+        top: 35%;
+        left: 50%;
+    }
+}
+
+.card--book {
+    background-color: fonts.$background-color-card;
+    opacity: 0.9;
+    width: 450px;
+    height: 250px;
+    padding: 50px 30px;
+    position: relative;
 }

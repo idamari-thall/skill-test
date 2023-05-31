@@ -1,49 +1,18 @@
 @use 'fonts';
 
+
+
 header {
-    background-image: url(../images/cliff.png);
+    background-image: url(../images/cliff-big.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 820px;
-}
-
-.nav {
-    overflow: hidden;
-    background-color: #5474FD;
-    width: 100%;
+    height: 740px;
     display: flex;
-    justify-content: space-between;
-
-
-    &__navbar {
-        display: flex;
-        justify-content: space-between;
-        padding: 30px;
-    }
-
-    &__item {
-        float: left;
-        display: block;
-        text-align: center;
-        padding: 20px 20px;
-    }
-
-    &__item:hover {
-        font-weight: 700;
-    }
-
-    &__link,
-    &__logo {
-        text-transform: uppercase;
-        color: fonts.$primary-color;
-        text-decoration: none;
-    }
+    flex-direction: column;
 }
 
-@media screen and (max-width: 800px) {
-    .nav__item {
-        float: none;
-        width: 100%;
-    }
+.header__input {
+    width: 500px;
+    height: 63px;
 }
