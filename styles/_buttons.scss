@@ -40,6 +40,12 @@
     transition-delay: 0.1s;
 }
 
+.btn:focus,
+.btn--search:focus {
+    background-color: #0829bd;
+}
+
+
 @media screen and (max-width: 900px) {
 
     .btn,

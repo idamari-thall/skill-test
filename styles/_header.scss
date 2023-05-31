@@ -75,6 +75,10 @@
         font-weight: 600;
     }
 
+    &__link:focus {
+        color: fonts.$text-color-first;
+    }
+
 }
 
 

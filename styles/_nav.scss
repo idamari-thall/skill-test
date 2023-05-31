@@ -54,6 +54,10 @@
     &__link:hover {
         font-weight: 600;
     }
+
+    &__link:focus {
+        color: fonts.$text-color-first;
+    }
 }
 
 @media screen and (max-width: 900px) {
