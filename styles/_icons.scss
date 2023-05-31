@@ -5,11 +5,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 340px;
-}
+    min-height: 340px;
+    width: 100%;
 
-.container-icons__bow {
-    width: 777px;
+    &__bow {
+        width: 777px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .icons {
@@ -19,8 +26,48 @@
     width: 1000px;
 }
 
-.container-icons__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+
+
+@media screen and (max-width: 900px) {
+    .container-icons {
+        min-height: 240px;
+
+        &__bow {
+            width: 490px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+
+    .icons {
+        width: 560px;
+    }
+
+    .icon {
+        width: 40px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .container-icons {
+        &__bow {
+            width: 100px;
+            visibility: hidden;
+        }
+
+        &__card {
+            margin: 10px;
+        }
+    }
+
+    .icons {
+        flex-direction: column;
+    }
+
 }

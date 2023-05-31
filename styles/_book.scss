@@ -24,6 +24,7 @@
     background-position: center;
     background-size: cover;
     height: 700px;
+    width: 100%;
 
     &__country {
         font-family: fonts.$primary-font-family;
@@ -43,4 +44,38 @@
     height: 300px;
     padding: 50px 30px;
     position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .container-book {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card--book {
+        width: 50%;
+        height: 300px;
+        padding: 30px 10px;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .container-book {
+
+        &__country {
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 1px;
+        }
+    }
+
+    .card--book {
+        width: 70%;
+        height: 330px;
+    }
 }

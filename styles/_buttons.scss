@@ -1,6 +1,7 @@
 @use 'fonts';
 
-.btn {
+.btn,
+.btn--search {
     background-color: fonts.$decoration-color;
     width: 228px;
     height: 63px;
@@ -24,4 +25,34 @@
 .btn--search {
     border: 2px solid #fff;
     margin: 0px;
+}
+
+.btn:hover {
+    background-color: fonts.$btn-hover-color;
+    transform: scale(1.03);
+    transition: all 0.9s;
+    transition-delay: 0.1s;
+}
+
+.btn--search:hover {
+    background-color: fonts.$btn-hover-color;
+    transition: all 0.9s;
+    transition-delay: 0.1s;
+}
+
+@media screen and (max-width: 900px) {
+
+    .btn,
+    .btn--search {
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 20px;
+    }
+
+    .btn--search {
+        border: none;
+
+    }
 }

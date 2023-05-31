@@ -46,3 +46,28 @@ p {
     line-height: 26px;
     color: fonts.$text-color-first;
 }
+
+
+@media screen and (max-width: 900px) {
+    h2 {
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 20px;
+        line-height: 10px;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 10px;
+    }
+}

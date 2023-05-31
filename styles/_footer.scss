@@ -1,9 +1,18 @@
 @use 'fonts';
 
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .container-footer {
+    height: 271px;
+    width: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: end;
 
     &__logo {
         font-family: fonts.$primary-font-family;
@@ -13,6 +22,7 @@
         line-height: 26px;
         letter-spacing: 3.36px;
         text-transform: uppercase;
+        margin-bottom: 5px;
     }
 
     &__slogan {
@@ -23,17 +33,21 @@
         line-height: 26px;
         text-align: center;
         letter-spacing: 1.6px;
+        margin-top: 0px;
     }
 
     &__socials {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         width: 166px;
+        margin: 0 40px 40px 0;
+        //FRÅGA: Av någon anledning som jag inte kom på hamnade iconerna inte helt i mitten 
+        //Det är därför jag la till margin på högra sidan. Vet du varför det blev så?
     }
 
     &__item {
         list-style: none;
-
     }
 
     &__icon {

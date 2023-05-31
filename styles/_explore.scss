@@ -5,7 +5,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 685px;
+    min-height: 685px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,13 +18,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
 
 
     &__card1 {
         display: flex;
         flex-direction: column;
-        width: 560px;
+        max-width: 560px;
+        width: 100%;
+        padding: 10px;
     }
 
     &__card2 {
@@ -37,7 +41,6 @@
     }
 
     &__img {
-        //position: absolute;
         width: 350px;
         height: 220px;
         margin: 5px;
@@ -48,4 +51,47 @@
 .img-cliff {
     position: relative;
     left: 80px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .explore {
+        min-height: 500px;
+    }
+
+    .container-explore {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .container-explore {
+
+        &__card1 {
+            align-items: center;
+            width: 80%;
+        }
+
+        &__card2 {
+            align-items: center;
+        }
+
+        &__text {
+            letter-spacing: 1px;
+        }
+
+        &__img {
+            width: 300px;
+            height: 180px;
+            margin: 5px;
+        }
+
+    }
+
+    .img-cliff {
+        position: static;
+    }
+
 }

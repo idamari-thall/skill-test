@@ -4,12 +4,12 @@
     overflow: hidden;
     background-color: fonts.$decoration-color;
     width: 100%;
-    height: 83px;
     position: sticky;
     display: flex;
     justify-content: center;
     top: 0;
     z-index: 1;
+    padding: 10px;
 
 
     &__navbar {
@@ -26,10 +26,6 @@
         padding: 20px 20px;
     }
 
-    &__item:hover {
-        font-weight: 700;
-    }
-
     &__logo {
         font-family: fonts.$primary-font-family;
         font-style: normal;
@@ -41,6 +37,10 @@
         text-decoration: none;
     }
 
+    &__logo-link:hover {
+        color: fonts.$text-color-first;
+    }
+
     &__link {
         font-family: fonts.$secondary-font-family;
         font-style: normal;
@@ -50,11 +50,25 @@
         text-transform: uppercase;
         text-decoration: none;
     }
+
+    &__link:hover {
+        font-weight: 600;
+    }
 }
 
-@media screen and (max-width: 800px) {
-    .nav__item {
-        float: none;
-        width: 100%;
+@media screen and (max-width: 900px) {
+    .nav {
+        position: static;
+
+        &__navbar {
+            flex-direction: column;
+        }
+
+        &__item {
+            float: none;
+            width: 100%;
+            padding: 5px;
+        }
+
     }
 }

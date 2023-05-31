@@ -6,6 +6,7 @@
     background-position: center;
     background-size: cover;
     height: 731px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,13 +19,15 @@
         align-items: center;
         justify-content: center;
         margin-top: 40px;
-        width: 1100px;
-        height: 287px;
+        max-width: 1100px;
+        width: 100%;
+        min-height: 287px;
     }
 
     &__text {
-        width: 620px;
-        height: 250px;
+        max-width: 620px;
+        width: 100%;
+        min-height: 250px;
         padding: 10px 10px 0 40px;
     }
 }
@@ -38,4 +41,49 @@
 .review__img {
     width: 445px;
     height: 284px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .container-review {
+        background-image: url(../images/man-big-md.png);
+        min-height: 500px;
+
+        &__card {
+            flex-direction: column;
+            margin-top: 20px;
+            width: 70%;
+        }
+
+        &__text {
+            width: 90%;
+            min-height: 100px;
+        }
+
+    }
+
+    .fa-quote-left {
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 576px) {
+        .container-review {
+            background-image: url(../images/man-big-sm.png);
+
+            &__card {
+                width: 80%;
+            }
+        }
+
+        .fa-quote-left {
+            color: fonts.$decoration-color;
+            font-size: 18px;
+        }
+
+
+        .review__img {
+            width: 300px;
+            height: 200px;
+        }
+    }
 }
