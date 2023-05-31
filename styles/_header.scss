@@ -7,3 +7,43 @@ header {
     background-size: cover;
     height: 820px;
 }
+
+.nav {
+    overflow: hidden;
+    background-color: #5474FD;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    &__item {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 20px 20px;
+    }
+
+    &__item:hover {
+        font-weight: 700;
+    }
+
+    &__link,
+    &__logo {
+        text-transform: uppercase;
+        color: fonts.$primary-color;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav__item {
+        float: none;
+        width: 100%;
+    }
+}

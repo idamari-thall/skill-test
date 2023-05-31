@@ -1,1 +1,14 @@
 @use 'fonts';
+
+.btn {
+    background-color: fonts.$btn-color;
+    width: 228px;
+    height: 63px;
+    border: none;
+}
+
+.link--btn {
+    color: fonts.$primary-color;
+    text-decoration: none;
+    text-transform: uppercase;
+}

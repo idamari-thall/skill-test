@@ -1,1 +1,26 @@
 @use 'fonts';
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        width: 166px;
+    }
+
+    &__item {
+        list-style: none;
+
+    }
+
+    &__icon {
+        color: fonts.$primary-color;
+    }
+}
+
+.fa-linkedin-in {
+    color: #5474FD;
+}
