@@ -1,0 +1,18 @@
+@use 'fonts';
+
+@import 'header';
+@import 'nav';
+@import 'explore';
+@import 'icons';
+@import 'book';
+@import 'review';
+@import 'footer';
+@import 'buttons';
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    //align-content: center;
+    background-color: fonts.$background-color;
+    color: fonts.$primary-color;
+}
