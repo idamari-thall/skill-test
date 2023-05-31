@@ -1,1 +1,9 @@
 @use 'fonts';
+
+header {
+    background-image: url(../images/cliff.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 820px;
+}

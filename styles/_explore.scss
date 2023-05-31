@@ -1,1 +1,15 @@
 @use 'fonts';
+
+.container-explore {
+    background-image: url(../images/castle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 685px;
+}
+
+.container-explore__img {
+    //position: absolute;
+    width: 350px;
+    height: 220px;
+}

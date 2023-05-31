@@ -1,1 +1,17 @@
 @use 'fonts';
+
+.container-book1 {
+    background-image: url(../images/pool.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+
+.container-book2 {
+    background-image: url(../images/ocean.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
